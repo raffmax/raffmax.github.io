@@ -18,13 +18,14 @@
 
 .page {
   @include breakpoint($large) {
-    @include span(10 of 12 last);
+    @include span(10.5 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include suffix(1.5 of 12);
   }
 
   .page__inner-wrap {
     @include full();
+    padding-top: 0.1rem;
 
     .page__content,
     .page__meta,
@@ -32,6 +33,17 @@
       @include full();
     }
   }
+}
+
+.page__content > :first-child,
+.page__content > style:first-child + *,
+.page__inner-wrap > header:first-child,
+.page__inner-wrap > header > :first-child {
+  margin-top: 0 !important;
+}
+
+.page__inner-wrap > header {
+  margin-top: 0;
 }
 
 .page__title {

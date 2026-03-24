@@ -1,64 +1,171 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+## <i class="fas fa-briefcase" aria-hidden="true"></i> Work Experience
+<style>
+  .cv-entry {
+    display: grid;
+    grid-template-columns: 11.5rem minmax(0, 1fr);
+    column-gap: 1rem;
+    align-items: start;
+    margin: 1.2em 0 0.85em;
+  }
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+  .cv-entry-prefix,
+  .cv-entry-role,
+  .cv-entry-place {
+    font-size: 1.15em;
+    font-weight: 700;
+    line-height: 1.3;
+  }
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+  .cv-entry-prefix {
+    white-space: nowrap;
+  }
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  .cv-entry-place {
+    font-weight: 600;
+  }
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+  .cv-entry-content ul {
+    margin: 0.45em 0 0 1.2em;
+  }
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+  .cv-entry-content li + li {
+    margin-top: 0.2em;
+  }
+</style>
+
+<div class="cv-entry">
+  <div class="cv-entry-prefix">07/2025 - Present:</div>
+  <div class="cv-entry-content">
+    <div class="cv-entry-role">Postdoctoral Researcher</div>
+    <div class="cv-entry-place">University of Stuttgart / Max Planck Institute for Intelligent Systems</div>
+    <ul>
+      <li>Leading multiple projects on the co-design of robotic systems, with a focus on hardware development</li>
+      <li>Building and employing a one-legged hopping robot to explore energy efficiency</li>
+      <li>Designing and deploying a robust passive dynamic walker with knees</li>
+      <li>Developing modular systems:
+        <ul>
+          <li>A planarizer for various robotic applications</li>
+          <li>An actuator module for different robotic systems</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-prefix">10/2019 - 07/2025:</div>
+  <div class="cv-entry-content">
+    <div class="cv-entry-role">Research Associate</div>
+    <div class="cv-entry-place">University of Stuttgart</div>
+    <ul>
+      <li>Institute for Adaptive Mechanical Systems (from 04/2025).
+        <ul>
+          <li>Contributed to the launch of the IAMS Robotics Institute, managing IT infrastructure setup and supporting recruitment efforts.</li>
+        </ul>
+      </li>
+      <li>Institute for Nonlinear Mechanics (until 03/2025).
+        <ul>
+          <li>Developed new methodologies for the synthesis of optimal periodic motions for legged robotic systems.</li>
+          <li>Contributed to collaborations, publications, and conference presentations.</li>
+          <li>Authored and secured two DFG grant proposals.</li>
+          <li>Supervised and mentored more than 20 Bachelor's and Master's students.</li>
+          <li>Developed and delivered lecture content, including examination support.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-prefix">06/2018 - 12/2018:</div>
+  <div class="cv-entry-content">
+    <div class="cv-entry-role">Internship</div>
+    <div class="cv-entry-place"><img src="/images/logos/trumpf.svg" alt="TRUMPF logo" style="height: 1em; vertical-align: -0.15em;"> TRUMPF GmbH + Co. KG (Machine Dynamics)</div>
+    <ul>
+      <li>Modeling and simulation of laser cutting machine tools.</li>
+      <li>Development of visualization tools using computational geometry.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-prefix">12/2017 - 05/2018:</div>
+  <div class="cv-entry-content">
+    <div class="cv-entry-role">Research Assistant</div>
+    <div class="cv-entry-place"><img src="/images/logos/nc-at.svg" alt="NC A&T logo" style="height: 1em; vertical-align: -0.15em;"> NC A&T TECHLAV Center, USA</div>
+    <ul>
+      <li>Quadcopter trajectory generation and control design.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-prefix">2015 - 2017:</div>
+  <div class="cv-entry-content">
+    <div class="cv-entry-role">Teaching Assistant</div>
+    <div class="cv-entry-place">University of Stuttgart</div>
+    <ul>
+      <li>Supported teaching activities across system dynamics, systems theory and automatic control, and nonlinear mechanics.</li>
+    </ul>
+  </div>
+</div>
+
+## <i class="fas fa-graduation-cap" aria-hidden="true"></i> Education
+<div class="cv-entry">
+  <div class="cv-entry-prefix">07/2020 - 07/2025:</div>
+  <div class="cv-entry-content">
+    <div class="cv-entry-role">Doctor of Engineering (Dr.-Ing.)</div>
+    <div class="cv-entry-place">University of Stuttgart (Grade: summa cum laude)</div>
+    <ul>
+      <li>Jointly with Graduate School IMPRS-IS.</li>
+      <li>Thesis: Continuation and Optimization of Gaits and Other Non-Smooth Orbits.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-prefix">10/2016 - 10/2019:</div>
+  <div class="cv-entry-content">
+    <div class="cv-entry-role">Master of Science in Engineering Cybernetics</div>
+    <div class="cv-entry-place">University of Stuttgart (Grade: 1.6)</div>
+    <ul>
+      <li><strong>Master's Thesis Project in Michigan, USA (01/2019 - 04/2019):</strong>
+        <ul>
+          <li><strong><img src="/images/logos/university-of-michigan.svg" alt="University of Michigan logo" style="height: 1em; vertical-align: -0.15em;"> University of Michigan, Ann Arbor</strong></li>
+          <li>Thesis: Exploring Soft Contact Models in the Optimization of Gaits.</li>
+        </ul>
+      </li>
+      <li><strong>Academic year abroad in North Carolina, USA (08/2017 - 05/2018):</strong>
+        <ul>
+          <li><strong><img src="/images/logos/nc-at.svg" alt="NC A&T logo" style="height: 1em; vertical-align: -0.15em;"> NC A&T State University, Greensboro (2 semesters)</strong></li>
+          <li><strong><img src="/images/logos/uncg.svg" alt="UNCG logo" style="height: 1em; vertical-align: -0.15em;"> University of North Carolina at Greensboro, Greensboro (1 semester)</strong></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-prefix">10/2013 - 11/2016:</div>
+  <div class="cv-entry-content">
+    <div class="cv-entry-role">Bachelor of Science in Engineering Cybernetics</div>
+    <div class="cv-entry-place">University of Stuttgart (Grade: 2.2)</div>
+    <ul>
+      <li>Thesis: Discrete Optimal Control of Inverted Pendulum with Friction.</li>
+    </ul>
+  </div>
+</div>
+
+## <i class="fas fa-tools" aria-hidden="true"></i> Skills
+- Programming and scientific tools: Matlab/Simulink, Python, Julia, C++, Git.
+- Engineering tools: CAD, LaTeX.
+- Languages: German, English.
