@@ -1,0 +1,380 @@
+﻿1
+00:00:00,040 --> 00:00:02,633
+Hey, my name is Maximilian Raff,
+
+2
+00:00:02,658 --> 00:00:04,443
+and in my dissertation I developed
+
+3
+00:00:04,468 --> 00:00:07,147
+mathematical tools to analyze and generate
+
+4
+00:00:07,172 --> 00:00:08,666
+efficient periodic motions
+
+5
+00:00:08,691 --> 00:00:10,260
+in robotic systems.
+
+6
+00:00:10,493 --> 00:00:12,168
+When we build legged robots,
+
+7
+00:00:12,193 --> 00:00:13,400
+we imagine them doing all kinds
+
+8
+00:00:13,425 --> 00:00:15,762
+of repetitive tasks: moving objects,
+
+9
+00:00:15,787 --> 00:00:17,621
+performing field operations,
+
+10
+00:00:17,646 --> 00:00:19,333
+and navigating varied terrain
+
+11
+00:00:19,358 --> 00:00:20,468
+at different speeds.
+
+12
+00:00:20,656 --> 00:00:22,025
+So we need a library
+
+13
+00:00:22,050 --> 00:00:23,445
+of repeatable motion patterns,
+
+14
+00:00:23,470 --> 00:00:26,434
+or gaits, like walking or running.
+
+15
+00:00:26,680 --> 00:00:27,817
+And because the robot
+
+16
+00:00:27,842 --> 00:00:29,863
+runs on a single battery charge,
+
+17
+00:00:29,888 --> 00:00:32,368
+these gaits must be energy-efficient.
+
+18
+00:00:32,769 --> 00:00:35,157
+Finding these periodic gaits is challenging
+
+19
+00:00:35,182 --> 00:00:36,269
+because the motion space
+
+20
+00:00:36,294 --> 00:00:38,092
+is highly dynamic and nonlinear,
+
+21
+00:00:38,117 --> 00:00:39,504
+while the actuation space
+
+22
+00:00:39,529 --> 00:00:41,479
+is constrained by underactuation.
+
+23
+00:00:41,768 --> 00:00:43,228
+A key idea in my work is
+
+24
+00:00:43,253 --> 00:00:45,073
+to first study the robot's motions
+
+25
+00:00:45,098 --> 00:00:47,076
+without actuation, setting the
+
+26
+00:00:47,101 --> 00:00:48,530
+actuation input to zero
+
+27
+00:00:48,555 --> 00:00:50,581
+and focusing purely on its natural,
+
+28
+00:00:50,606 --> 00:00:52,136
+unforced dynamics.
+
+29
+00:00:52,414 --> 00:00:53,880
+These natural dynamics also appear
+
+30
+00:00:53,905 --> 00:00:55,642
+in passive dynamic walkers
+
+31
+00:00:55,667 --> 00:00:56,752
+that move downhill
+
+32
+00:00:56,777 --> 00:00:58,408
+powered only by gravity.
+
+33
+00:00:58,741 --> 00:01:00,602
+This leads to the central question:
+
+34
+00:01:00,627 --> 00:01:01,858
+can natural dynamics
+
+35
+00:01:01,883 --> 00:01:03,311
+help us design and control
+
+36
+00:01:03,336 --> 00:01:05,326
+energy-efficient legged systems?
+
+37
+00:01:05,637 --> 00:01:08,602
+My dissertation contributes in three areas:
+
+38
+00:01:08,627 --> 00:01:10,864
+systematically generating gait libraries
+
+39
+00:01:10,889 --> 00:01:12,777
+using continuation methods,
+
+40
+00:01:12,802 --> 00:01:14,896
+achieving energy efficient motion
+
+41
+00:01:14,921 --> 00:01:16,612
+through optimal control,
+
+42
+00:01:16,837 --> 00:01:18,753
+and leveraging natural dynamics
+
+43
+00:01:18,779 --> 00:01:21,034
+from unactuated passive gaits,
+
+44
+00:01:21,330 --> 00:01:23,484
+All centered around the idea
+
+45
+00:01:23,509 --> 00:01:25,037
+that a robot's natural dynamics
+
+46
+00:01:25,062 --> 00:01:27,599
+shape its energy-optimal gait libraries.
+
+47
+00:01:28,072 --> 00:01:29,367
+Besides passive robots
+
+48
+00:01:29,392 --> 00:01:30,917
+that use environmental energy
+
+49
+00:01:30,942 --> 00:01:32,582
+to compensate losses from joint friction
+
+50
+00:01:32,607 --> 00:01:33,982
+and foot impacts,
+
+51
+00:01:34,007 --> 00:01:36,058
+there's also a fully lossless class
+
+52
+00:01:36,083 --> 00:01:38,734
+of systems that conserve all their energy.
+
+53
+00:01:38,990 --> 00:01:40,176
+They are theoretical,
+
+54
+00:01:40,201 --> 00:01:42,298
+but incredibly useful for exploration
+
+55
+00:01:42,323 --> 00:01:43,696
+because the periodic gaits
+
+56
+00:01:43,721 --> 00:01:44,965
+can continuously morph
+
+57
+00:01:44,990 --> 00:01:46,283
+from hopping in place
+
+58
+00:01:46,308 --> 00:01:48,063
+to walking and running.
+
+59
+00:01:48,411 --> 00:01:50,856
+Using a general mathematical abstraction
+
+60
+00:01:50,881 --> 00:01:52,363
+based on hybrid dynamics,
+
+61
+00:01:52,388 --> 00:01:54,490
+I proved that these periodic orbits
+
+62
+00:01:54,515 --> 00:01:56,062
+are fundamentally connected.
+
+63
+00:01:56,314 --> 00:01:57,671
+And with continuation methods
+
+64
+00:01:57,696 --> 00:01:59,375
+I show how entire gait families
+
+65
+00:01:59,400 --> 00:02:01,560
+can be systematically generated,
+
+66
+00:02:01,585 --> 00:02:02,770
+starting from something
+
+67
+00:02:02,795 --> 00:02:04,834
+as simple as standing still.
+
+68
+00:02:05,310 --> 00:02:06,984
+But how do these passive gaits
+
+69
+00:02:07,009 --> 00:02:09,629
+connect to generally actuated gaits?
+
+70
+00:02:09,940 --> 00:02:12,268
+Well, since they use zero actuation,
+
+71
+00:02:12,293 --> 00:02:14,083
+they don't draw any energy,
+
+72
+00:02:14,108 --> 00:02:15,800
+That makes them globally optimal
+
+73
+00:02:15,825 --> 00:02:17,054
+for a wide class
+
+74
+00:02:17,079 --> 00:02:19,114
+of energetic cost functions.
+
+75
+00:02:19,520 --> 00:02:21,327
+Using continuation methods again,
+
+76
+00:02:21,352 --> 00:02:23,530
+paired with insight from optimization,
+
+77
+00:02:23,641 --> 00:02:26,071
+I show how it's possible to systematically
+
+78
+00:02:26,096 --> 00:02:27,983
+generate optimal gait libraries
+
+79
+00:02:28,008 --> 00:02:29,788
+that originate from the two classes
+
+80
+00:02:29,813 --> 00:02:31,378
+of passive dynamics,
+
+81
+00:02:31,490 --> 00:02:33,438
+showcasing how this continuous path
+
+82
+00:02:33,463 --> 00:02:34,316
+of optimal gaits can be followed
+
+83
+00:02:34,341 --> 00:02:36,811
+in both simple
+
+84
+00:02:36,836 --> 00:02:39,969
+and much more complex-legged systems.
+
+85
+00:02:40,403 --> 00:02:41,540
+This approach reveals
+
+86
+00:02:41,565 --> 00:02:43,108
+how a system's structure,
+
+87
+00:02:43,133 --> 00:02:44,629
+like adding elastic springs,
+
+88
+00:02:44,679 --> 00:02:45,683
+shapes energy use,
+
+89
+00:02:45,708 --> 00:02:47,475
+and guides the joint optimization
+
+90
+00:02:47,500 --> 00:02:48,988
+of hardware and control.
+
+91
+00:02:49,234 --> 00:02:50,674
+Beyond legged robots,
+
+92
+00:02:50,699 --> 00:02:52,661
+it can extend to exoskeletons
+
+93
+00:02:52,686 --> 00:02:53,801
+and prostheses,
+
+94
+00:02:53,826 --> 00:02:55,463
+offering a systematic way
+
+95
+00:02:55,488 --> 00:02:59,084
+to connect design, control, and efficiency.
+

@@ -1,0 +1,171 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">First-author papers are marked in the list below.</div>
+{% endif %}
+
+<style>
+  .research-tag-index {
+    margin: 1.25rem 0 1.5rem;
+  }
+
+  .research-tag-index-title {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .research-tag-index-buttons,
+  .archive__item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .research-tag-button,
+  .research-tag-pill {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #b7c8b8;
+    border-radius: 999px;
+    background: #f4f8f4;
+    color: #244b2a;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 0.35rem 0.8rem;
+    text-decoration: none;
+  }
+
+  .research-tag-button.is-active,
+  .research-tag-button:hover,
+  .research-tag-pill:hover {
+    background: #dfeee0;
+  }
+
+  .archive__item-tags {
+    margin: 0 0 0.75rem;
+  }
+
+  .research-empty-state {
+    display: none;
+    margin: 1rem 0 2rem;
+    font-style: italic;
+  }
+</style>
+
+<h2>Co-Design for Legged Systems: Natural Dynamics in Periodic Systems</h2>
+<video width="640" height="360" controls playsinline preload="metadata" style="border: 1px solid #b3b3b3;">
+  <source src="/files/naturalDynamics.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<div class="research-tag-index" id="research-tags">
+  <div class="research-tag-index-title">Browse by tag</div>
+  <div class="research-tag-index-buttons">
+    <a href="#tag-all" class="research-tag-button is-active" data-tag-filter="all">All</a>
+    <a href="#tag-optimization" class="research-tag-button" data-tag-filter="optimization">Optimization</a>
+    <a href="#tag-natural-dynamics" class="research-tag-button" data-tag-filter="natural dynamics">Natural Dynamics</a>
+    <a href="#tag-co-design" class="research-tag-button" data-tag-filter="co-design">Co-Design</a>
+  </div>
+</div>
+
+{% include base_path %}
+
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    <section class="research-category">
+      {% for post in site.research reversed %}
+        {% if post.category != category[0] %}
+          {% continue %}
+        {% endif %}
+        {% unless title_shown %}
+          <h2>{{ category[1].title }}</h2><hr />
+          {% assign title_shown = true %}
+        {% endunless %}
+        {% include archive-single.html %}
+      {% endfor %}
+    </section>
+  {% endfor %}
+{% else %}
+  {% for post in site.research reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
+
+<p class="research-empty-state" id="research-empty-state">No research entries match the selected tag.</p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var buttons = Array.prototype.slice.call(document.querySelectorAll("[data-tag-filter]"));
+    var pills = Array.prototype.slice.call(document.querySelectorAll("[data-filter-tag]"));
+    var items = Array.prototype.slice.call(document.querySelectorAll("[data-research-tags]"));
+    var categories = Array.prototype.slice.call(document.querySelectorAll(".research-category"));
+    var emptyState = document.getElementById("research-empty-state");
+    var tagIndex = document.getElementById("research-tags");
+
+    function normalizeTag(tag) {
+      return (tag || "").toLowerCase();
+    }
+
+    function hashToTag(hash) {
+      var clean = (hash || "").replace(/^#tag-/, "");
+      if (clean === "natural-dynamics") return "natural dynamics";
+      if (clean === "co-design") return "co-design";
+      return clean || "all";
+    }
+
+    function applyFilter(tag) {
+      var normalized = normalizeTag(tag);
+      var anyVisible = false;
+
+      buttons.forEach(function (button) {
+        button.classList.toggle("is-active", button.getAttribute("data-tag-filter") === normalized);
+      });
+
+      items.forEach(function (item) {
+        var tags = normalizeTag(item.getAttribute("data-research-tags")).split("|");
+        var show = normalized === "all" || tags.indexOf(normalized) !== -1;
+        item.style.display = show ? "" : "none";
+        if (show) anyVisible = true;
+      });
+
+      categories.forEach(function (category) {
+        var categoryItems = Array.prototype.slice.call(category.querySelectorAll("[data-research-tags]"));
+        var visibleInCategory = categoryItems.some(function (item) {
+          return item.style.display !== "none";
+        });
+        category.style.display = visibleInCategory ? "" : "none";
+      });
+
+      if (emptyState) {
+        emptyState.style.display = anyVisible ? "none" : "block";
+      }
+    }
+
+    function syncFromHash() {
+      applyFilter(hashToTag(window.location.hash));
+    }
+
+    buttons.concat(pills).forEach(function (link) {
+      link.addEventListener("click", function () {
+        var sourceTag = link.getAttribute("data-tag-filter") || link.getAttribute("data-filter-tag") || "all";
+        window.location.hash = "tag-" + sourceTag.replace(/\s+/g, "-");
+        if (tagIndex) {
+          tagIndex.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    });
+
+    window.addEventListener("hashchange", syncFromHash);
+    syncFromHash();
+  });
+</script>
