@@ -1,0 +1,326 @@
+---
+layout: archive
+title: "Co-Design via Natural Dynamics"
+permalink: /co-design-via-natural-dynamics/
+author_profile: true
+---
+
+<style>
+  .research-interactive {
+    margin: 2rem 0 2.5rem;
+    padding: 1.25rem;
+    border: 1px solid #c7d2c8;
+    background: linear-gradient(180deg, #f9fcf8 0%, #f1f6ef 100%);
+    position: relative;
+  }
+
+  .research-interactive h2,
+  .research-interactive h3,
+  .research-interactive h4 {
+    margin-top: 0;
+  }
+
+  .research-diagram-wrap h3 {
+    white-space: nowrap;
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+
+  .research-interactive-note {
+    margin-bottom: 1rem;
+    color: #465247;
+    font-size: 0.95rem;
+  }
+
+  .research-interactive-grid {
+    display: grid;
+    gap: 1.25rem;
+    align-items: stretch;
+  }
+
+  .research-interactive-panel {
+    min-width: 0;
+    height: 100%;
+  }
+
+  .research-controls {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .research-controls-title {
+    margin: 0.15rem 0 0.2rem;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .research-control {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .research-control label,
+  .research-branch legend {
+    font-weight: 700;
+  }
+
+  .research-control-label {
+    display: grid;
+    gap: 0.16rem;
+  }
+
+  .research-control label code {
+    font-size: 1.15em;
+  }
+
+  .research-control-label-desc {
+    font-weight: 400;
+  }
+
+  .research-control-symbol-line {
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    color: #244b2a;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .research-control-row {
+    display: block;
+  }
+
+  .research-control-row input[type="range"] {
+    display: block;
+    width: 96%;
+    max-width: 11rem;
+  }
+
+  .research-control-value {
+    font-variant-numeric: tabular-nums;
+    color: #244b2a;
+    font-weight: 700;
+  }
+
+  .research-branch {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .research-branch-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.25rem;
+  }
+
+  .research-branch-options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 0.96rem;
+    line-height: 1.2;
+  }
+
+  .research-branch-options .research-legend-swatch {
+    margin-left: 0.15rem;
+    margin-right: 0.1rem;
+  }
+
+  .research-loading-overlay {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background: rgba(237, 242, 237, 0.7);
+    z-index: 5;
+  }
+
+  .research-interactive.is-loading .research-loading-overlay {
+    display: flex;
+  }
+
+  .research-loading-message {
+    padding: 0.75rem 1rem;
+    border: 1px solid #b7c8b8;
+    background: rgba(255, 255, 255, 0.92);
+    color: #244b2a;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .research-canvas-wrap,
+  .research-diagram-wrap {
+    height: 100%;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid #d7e3d7;
+    box-sizing: border-box;
+  }
+
+  .research-controls {
+    height: 100%;
+    align-content: start;
+  }
+
+  .research-canvas-wrap {
+    display: grid;
+    gap: 0.04rem;
+    align-content: start;
+  }
+
+  .research-canvas-wrap canvas,
+  .research-intro-video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .research-canvas-wrap canvas {
+    touch-action: none;
+  }
+
+  .research-gamma-display {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.28rem;
+    color: #2d3d30;
+    font-size: 0.9rem;
+    margin-top: -0.12rem;
+  }
+
+  .research-gamma-value {
+    font-size: 1.0rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: #244b2a;
+  }
+
+  .research-intro-video {
+    max-width: 820px;
+    margin: 1rem 0 1.5rem;
+    border: 1px solid #b3b3b3;
+  }
+
+  .research-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.75rem;
+    font-size: 0.92rem;
+  }
+
+  .research-legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .research-legend-swatch {
+    width: 1.25rem;
+    height: 0;
+    border-top: 3px solid #6e8f73;
+  }
+
+  .research-legend-swatch.short {
+    border-top-color: #2f6f3e;
+  }
+
+  .research-legend-swatch.long {
+    border-top-color: #7b4aa1;
+  }
+
+  .research-legend-swatch.still {
+    border-top-color: #6f7b70;
+    border-top-style: dashed;
+  }
+
+  .research-diagram-caption {
+    margin-top: 0.75rem;
+    color: #465247;
+    font-size: 0.92rem;
+  }
+
+  @media screen and (min-width: 1100px) {
+    .research-interactive-grid {
+      grid-template-columns: minmax(9rem, 9.75rem) minmax(20.5rem, 1.06fr) minmax(25.25rem, 1.42fr);
+    }
+  }
+</style>
+
+<p>
+  This page presents ongoing work on the co-design of legged systems, with a focus on how natural dynamics can guide both morphology and behavior. The interactive explorer below complements the introduction video by highlighting different aspects of how a system's morphology shapes its motion space.
+</p>
+
+<video class="research-intro-video" controls playsinline preload="metadata">
+  <source src="/files/naturalDynamics.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<section class="research-interactive" id="compass-gait-explorer">
+  <h2>Compass-Gait Walker</h2>
+  <p class="research-interactive-note">
+    The compass-gait walker is one of the simplest models of legged locomotion. It has four degrees of freedom and is characterized by two design parameters: the leg mass <i>m</i> and the leg center-of-mass <i>a</i>. After normalization by leg length <i>l</i><sub>0</sub>, total mass <i>m</i><sub>0</sub>, and gravity <i>g</i><sub>0</sub>, the remaining parameters follow from the constraints <i>a</i> + <i>b</i> = <i>l</i><sub>0</sub> and 2<i>m</i> + <i>M</i> = <i>m</i><sub>0</sub>.
+  </p>
+  <p class="research-interactive-note">
+    Feel free to change the design parameters and explore how the motion changes from standstill to downhill passive walking as the slope angle &gamma; is varied.
+  </p>
+
+  <div class="research-interactive-grid">
+    <div class="research-interactive-panel">
+      <div class="research-controls">
+        <h3 class="research-controls-title">Design Parameters</h3>
+        <div class="research-control">
+          <label class="research-control-label" for="cgw-a">
+            <span class="research-control-label-desc">(leg center-of-mass)</span>
+            <span class="research-control-symbol-line"><i>a</i> = <span class="research-control-value" id="cgw-a-value">0.50 <i>l</i><sub>0</sub></span></span>
+          </label>
+          <div class="research-control-row">
+            <input id="cgw-a" type="range" min="0.33" max="0.55" step="0.01" value="0.50">
+          </div>
+        </div>
+
+        <div class="research-control">
+          <label class="research-control-label" for="cgw-m">
+            <span class="research-control-label-desc">(leg mass)</span>
+            <span class="research-control-symbol-line"><i>m</i> = <span class="research-control-value" id="cgw-m-value">0.25 <i>m</i><sub>0</sub></span></span>
+          </label>
+          <div class="research-control-row">
+            <input id="cgw-m" type="range" min="0.01" max="0.47" step="0.01" value="0.25">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="research-interactive-panel">
+      <div class="research-canvas-wrap">
+          <canvas id="cgw-canvas" width="820" height="720" aria-label="Interactive compass gait walker animation"></canvas>
+          <div class="research-gamma-display">slope <i>&gamma;<i> = <span class="research-gamma-value" id="cgw-gamma-value">2.00&deg;</span></div>
+      </div>
+    </div>
+
+    <div class="research-interactive-panel">
+      <div class="research-diagram-wrap">
+        <h3>Bifurcation Diagram</h3>
+        <svg id="cgw-bifurcation" viewBox="0 0 820 460" role="img" aria-label="Bifurcation diagram from standstill to walking as slope gamma is varied"></svg>
+        <fieldset class="research-branch">
+          <div class="research-branch-options">
+            <label><input type="radio" name="cgw-branch" value="short" checked><span class="research-legend-swatch short"></span> Short-period branch</label>
+            <label><input type="radio" name="cgw-branch" value="long"><span class="research-legend-swatch long"></span> Long-period branch</label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <div class="research-loading-overlay" id="cgw-loading" aria-live="polite" aria-hidden="true">
+    <div class="research-loading-message" id="cgw-loading-message">compute new bifurcation diagram ...</div>
+  </div>
+</section>
+
+<script src="{{ base_path }}/assets/js/cgw-interactive.js"></script>
