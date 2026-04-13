@@ -62,6 +62,9 @@ $x-large                    : 1280px !default;
 $right-sidebar-width-narrow : auto;
 $right-sidebar-width        : auto;
 $right-sidebar-width-wide   : auto;
+$left-sidebar-width         : 16.9491525424%;
+$content-column-width : 100% - $left-sidebar-width;
+$content-left-padding       : 1rem;
 
 $susy: (
     columns: 12,

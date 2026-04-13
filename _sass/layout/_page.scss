@@ -12,7 +12,11 @@
   animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    width: $content-column-width;
+    max-width: none;
+    margin-left: $left-sidebar-width;
+    margin-right: 0;
+    padding-left: $content-left-padding;
   }
 }
 
@@ -21,6 +25,14 @@
     @include span(10.5 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(1.5 of 12);
+  }
+
+  @include breakpoint($x-large) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .page__inner-wrap {

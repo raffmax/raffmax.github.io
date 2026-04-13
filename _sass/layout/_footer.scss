@@ -13,6 +13,11 @@
   width: 100%;
   clear: both;
 
+  @include breakpoint($x-large) {
+    left: $left-sidebar-width;
+    width: $content-column-width;
+  }
+
   /* sticky footer fix start */
   position: absolute;
   bottom: 0em;
@@ -26,6 +31,7 @@
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
   border-top: 1px solid var(--global-dark-border-color);
+  z-index: 20;
 
   footer {
     @include clearfix;

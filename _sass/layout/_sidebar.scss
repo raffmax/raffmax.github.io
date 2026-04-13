@@ -17,11 +17,16 @@
     margin-top: 1em;
   }
 
-  @media screen and (min-width: $sidebar-screen-min-width) {
+  @include breakpoint($x-large) {
     height: 100vh;
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
     position: fixed;
+    left: 0;
     top: -3.0rem;
+    width: $left-sidebar-width;
+    max-width: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
     z-index: 30;
   }
 
@@ -195,7 +200,7 @@
 
 .sidebar .author__desktop {
   display: none;
-  @media screen and (min-width: 1024px) {
+  @include breakpoint($x-large) {
     display: block;
   }
 }

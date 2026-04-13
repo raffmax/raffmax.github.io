@@ -22,6 +22,20 @@ body {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
   }
+
+  &::before {
+    @include breakpoint($x-large) {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: $left-sidebar-width;
+      width: 2px;
+      background: var(--global-border-color);
+      z-index: 25;
+    }
+  }
+
 }
 
 h1, h2, h3, h4, h5, h6 {
