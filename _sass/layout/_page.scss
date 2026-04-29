@@ -131,6 +131,20 @@
   }
 }
 
+.page__publication-image {
+  margin: 0 0 1.5rem;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 32rem;
+    height: auto;
+    border: 1px solid var(--global-border-color);
+    border-radius: $border-radius;
+    background: #fff;
+  }
+}
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;

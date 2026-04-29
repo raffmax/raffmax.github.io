@@ -4,12 +4,12 @@ collection: research
 permalink: /research/2023-hard-vs-soft-contacts/
 date: 2023-01-01
 venue: "Embracing Contacts Workshop at ICRA 2023"
-category: conferences
+category: manuscripts
 paperurl: "https://openreview.net/forum?id=k3O1RL0v_x"
 image: "/images/research/2023-hard-vs-soft-contacts.png"
 authors: "Maximilian Raff, C. David Remy"
 first_author: true
-tags: ["Optimization", "Co-Design"]
+tags: ["Optimization"]
 citation: "M. Raff and C. D. Remy (2023). Hard vs. soft contacts in trajectory optimization of legged robots: An example with a compliant rubber foot. Embracing Contacts Workshop at ICRA 2023."
 excerpt: "A workshop paper comparing rigid and compliant contact models for simulation accuracy and optimization behavior on legged robotic hardware."
 ---

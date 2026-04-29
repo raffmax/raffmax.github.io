@@ -9,7 +9,7 @@ redirect_from:
 
 Hi, I’m Max. I grew up just south of Stuttgart, Germany. From early on, I enjoyed tackling intricate projects—from carpentry around the house to transcribing and arranging orchestral music. What fascinated me was how combining many pieces could create something that feels simple, yet beautiful and innovative.
 
-Today, I apply mathematics to real-world systems such as robotics, bringing together ideas from different areas to develop elegant and practical solutions. (<a href="/research/">Watch my research video to learn more.</a>)
+Today, I apply mathematics to real-world systems such as robotics, bringing together ideas from different areas to develop elegant and practical solutions. (<a href="/co-design-via-natural-dynamics/">Explore my research through multimedia content to learn more.</a>)
 
 Outside the lab, I’m a passionate trombone player. I regularly perform with Stuttgart’s salsa ensemble Caballo Negro <a href="https://www.youtube.com/@caballo-negro" target="_blank" rel="noopener" aria-label="Caballo Negro on YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a> and also lead my own jazz band, Youngblood Dixies <a href="https://www.youtube.com/@youngblooddixies" target="_blank" rel="noopener" aria-label="Youngblood Dixies on YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>.
 

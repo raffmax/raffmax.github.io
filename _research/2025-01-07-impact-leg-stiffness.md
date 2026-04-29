@@ -1,16 +1,16 @@
 ---
-title: "Impact of Leg Stiffness on Energy Efficiency in One Legged Hopping"
+title: "How Leg Stiffness Affects Energy Economy in Hopping"
 collection: research
 permalink: /research/2025-impact-leg-stiffness/
 date: 2025-01-07
-venue: "arXiv preprint arXiv:2501.03971"
+venue: "The 12th International Symposium on Adaptive Motion of Animals and Machines (AMAM2025) and 2nd LokoAssist Symposium 2025"
 category: manuscripts
 paperurl: "https://arxiv.org/abs/2501.03971"
-image: "/images/research/2025-impact-leg-stiffness.png"
+image: "/images/research/2025-impact-leg-stiffness.jpg"
 authors: "Iskandar Khemakhem, Dominik Tschemernjak, Maximilian Raff, C. David Remy"
 first_author: false
 tags: ["Optimization", "Natural Dynamics", "Co-Design"]
-citation: "I. Khemakhem, D. Tschemernjak, M. Raff, and C. D. Remy (2025). Impact of Leg Stiffness on Energy Efficiency in One Legged Hopping. arXiv:2501.03971."
-excerpt: "A preprint quantifying how much variable stiffness can improve hopping efficiency compared with fixed-stiffness designs."
+citation: "I. Khemakhem, D. Tschemernjak, M. Raff, and C. D. Remy (2025). How Leg Stiffness Affects Energy Economy in Hopping. The 12th International Symposium on Adaptive Motion of Animals and Machines (AMAM2025) and 2nd LokoAssist Symposium 2025."
+excerpt: "A conference paper examining how leg stiffness shapes hopping energy economy and compares variable-stiffness and fixed-stiffness designs."
 ---
-This preprint reports an extensive optimal-control study of one-legged hopping and quantifies the energetic gains achievable through stiffness adaptation.
+This conference paper reports an extensive optimal-control study of one-legged hopping and quantifies the energetic gains achievable through stiffness adaptation.

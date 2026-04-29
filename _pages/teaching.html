@@ -1,12 +1,29 @@
 ---
 layout: archive
-title: "Teaching"
+title: ""
 permalink: /teaching/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<figure class="teaching-page-banner">
+  <img src="{{ '/images/teaching/interessierte-master-technische-kybernetik.jpg' | prepend: base_path }}" alt="Students in the Technische Kybernetik master's program">
+  <figcaption class="teaching-page-banner__caption">&copy; University of Stuttgart</figcaption>
+</figure>
+
+{% assign teaching_items = site.teaching | sort: "date" | reverse %}
+
+<h2 class="archive__subtitle">Class Work</h2>
+{% for post in teaching_items %}
+  {% unless post.title == "Student Projects" %}
+    {% include archive-single.html %}
+  {% endunless %}
+{% endfor %}
+
+<h2 class="archive__subtitle">Student Projects</h2>
+{% for post in teaching_items %}
+  {% if post.title == "Student Projects" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}

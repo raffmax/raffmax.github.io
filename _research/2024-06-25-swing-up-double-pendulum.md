@@ -4,7 +4,7 @@ collection: research
 permalink: /research/2024-swing-up-double-pendulum/
 date: 2024-06-25
 venue: "2024 European Control Conference (ECC)"
-category: conferences
+category: manuscripts
 paperurl: "https://ieeexplore.ieee.org/abstract/document/10590854/"
 image: "/images/research/2024-swing-up-double-pendulum.png"
 authors: "Arne Sachtler, Davide Calzolari, Maximilian Raff, Annika Schmidt, Yannik P. Wotte, Cosimo Della Santina, C. David Remy, Alin Albu-Schäffer"

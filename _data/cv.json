@@ -1,14 +1,14 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Maximilian Raff",
+    "email": "raff@iams.uni-stuttgart.de",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://raffmax.github.io",
+    "summary": "Currently employed at https://www.iams.uni-stuttgart.de/institute/team/Raff/. Dr.-Ing. in Robotics<br><em>System Theory \u00b7 Mechanics \u00b7 Automation \u00b7 Learning</em>",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Stuttgart",
       "countryCode": "US",
       "region": ""
     },
@@ -16,82 +16,124 @@
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://scholar.google.com/citations?user=YKPMk_0AAAAJ&hl"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "raffmax",
+        "url": "https://github.com/raffmax"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "maximilian-raff-7a1b37173",
+        "url": "https://www.linkedin.com/in/maximilian-raff-7a1b37173"
       }
     ]
   },
   "work": [],
-  "education": [
-    {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
-    }
-  ],
+  "education": [],
   "skills": [],
   "languages": [],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Exploring soft contact models in the optimization of gaits",
+      "publisher": "University of Stuttgart",
+      "releaseDate": "2019-08-01",
+      "website": "https://elib.uni-stuttgart.de/server/api/core/bitstreams/18d62f2b-a8df-4be1-8199-e9061c1b37f3/content",
+      "summary": "Master's thesis on the role of compliant contact models in simulation and gait optimization for legged robotic systems."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Connecting gaits in energetically conservative legged systems",
+      "publisher": "IEEE Robotics and Automation Letters",
+      "releaseDate": "2022-06-28",
+      "website": "https://ieeexplore.ieee.org/abstract/document/9809817/",
+      "summary": "A nonlinear-dynamics view of conservative gait families, with continuation methods for identifying connected gait manifolds and bifurcation structure."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Generating families of optimally actuated gaits from a legged system's energetically conservative dynamics",
+      "publisher": "2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "releaseDate": "2022-10-23",
+      "website": "https://ieeexplore.ieee.org/abstract/document/9981693/",
+      "summary": "A homotopy-based method that maps passive conservative gaits to locally optimal actuated motions for more realistic legged models."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Hard vs. soft contacts in trajectory optimization of legged robots: An example with a compliant rubber foot",
+      "publisher": "Embracing Contacts Workshop at ICRA 2023",
+      "releaseDate": "2023-01-01",
+      "website": "https://openreview.net/forum?id=k3O1RL0v_x",
+      "summary": "A workshop paper comparing rigid and compliant contact models for simulation accuracy and optimization behavior on legged robotic hardware."
+    },
+    {
+      "name": "An approach for generating families of energetically optimal gaits from passive dynamic walking gaits",
+      "publisher": "2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "releaseDate": "2023-10-01",
+      "website": "https://ieeexplore.ieee.org/abstract/document/10342322/",
+      "summary": "A continuation-based method for generating libraries of locally optimal bipedal gaits by starting from passive dynamic walking solutions."
+    },
+    {
+      "name": "Swing-up of a weakly actuated double pendulum via nonlinear normal modes",
+      "publisher": "2024 European Control Conference (ECC)",
+      "releaseDate": "2024-06-25",
+      "website": "https://ieeexplore.ieee.org/abstract/document/10590854/",
+      "summary": "A nonlinear-normal-mode approach for swinging up a double pendulum with very limited actuation authority."
+    },
+    {
+      "name": "The indirect method for generating libraries of optimal periodic trajectories and its application to economical bipedal walking",
+      "publisher": "arXiv preprint arXiv:2410.09512",
+      "releaseDate": "2024-10-12",
+      "website": "https://arxiv.org/abs/2410.09512",
+      "summary": "A preprint formalizing indirect trajectory optimization for periodic gait libraries and comparing it against direct methods on economical bipedal walking."
+    },
+    {
+      "name": "Koopman based trajectory optimization with mixed boundaries",
+      "publisher": "Proceedings of Machine Learning Research",
+      "releaseDate": "2025-01-16",
+      "website": "https://proceedings.mlr.press/v283/abou-taleb25a.html",
+      "summary": "A paper on partial convexification of trajectory optimization problems with mixed boundary constraints using Koopman-operator ideas."
+    },
+    {
+      "name": "The impact of AI on engineering design procedures for dynamical systems",
+      "publisher": "Technische Mechanik",
+      "releaseDate": "2024-12-16",
+      "website": "https://journals.ub.ovgu.de/index.php/techmech/article/view/2228",
+      "summary": "A broad perspective paper on where AI methods can assist modern engineering design workflows for dynamical and mechatronic systems."
+    },
+    {
+      "name": "Continuation and optimization of gaits and other non-smooth orbits",
+      "publisher": "University of Stuttgart",
+      "releaseDate": "2025-01-01",
+      "website": "https://elib.uni-stuttgart.de/items/3c4b9711-0be2-41a5-ab28-8f86a3d06b49",
+      "summary": "PhD thesis on mathematical tools that connect economical periodic motions, continuation methods, and morphology-aware design in legged systems."
+    },
+    {
+      "name": "How Leg Stiffness Affects Energy Economy in Hopping",
+      "publisher": "The 12th International Symposium on Adaptive Motion of Animals and Machines (AMAM2025) and 2nd LokoAssist Symposium 2025",
+      "releaseDate": "2025-01-07",
+      "website": "https://arxiv.org/abs/2501.03971",
+      "summary": "A conference paper examining how leg stiffness shapes hopping energy economy and compares variable-stiffness and fixed-stiffness designs."
+    },
+    {
+      "name": "Data publishing in mechanics and dynamics: challenges, guidelines, and examples from engineering design",
+      "publisher": "Data-Centric Engineering",
+      "releaseDate": "2025-01-15",
+      "website": "https://www.cambridge.org/core/journals/data-centric-engineering/article/data-publishing-in-mechanics-and-dynamics-challenges-guidelines-and-examples-from-engineering-design/1BF332F93F157FE831A88F96D794F6CC",
+      "summary": "A collaborative article on best practices for publishing datasets in mechanics and dynamics research."
+    },
+    {
+      "name": "Continuation of periodic orbits in conservative hybrid dynamical systems and its application to mechanical systems with impulsive dynamics",
+      "publisher": "Nonlinear Dynamics",
+      "releaseDate": "2025-04-01",
+      "website": "https://arxiv.org/abs/2402.06502",
+      "summary": "A journal article extending continuation ideas to conservative hybrid systems with impulsive dynamics and illustrating them on mechanical examples."
+    },
+    {
+      "name": "Discovering Optimal Natural Gaits of Dissipative Systems via Virtual Energy Injection",
+      "publisher": "IEEE Robotics and Automation Letters",
+      "releaseDate": "2025-12-05",
+      "website": "https://ieeexplore.ieee.org/abstract/document/11278684/",
+      "summary": "A framework for finding passive-like motions in dissipative systems and continuing them into energy-optimal actuated gaits."
     }
   ],
   "presentations": [
@@ -126,18 +168,53 @@
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "course": "Computational Dynamics for Robotics",
+      "institution": "University of Stuttgart",
+      "date": "2023-10-01",
+      "role": "Master's course",
+      "description": "Master's course on multibody kinematics and dynamics for robotics, mechatronics, and biomechanics, taught repeatedly at the University of Stuttgart."
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "Dynamics and Control of Legged Locomotion",
+      "institution": "University of Stuttgart",
+      "date": "2023-04-01",
+      "role": "Master's course",
+      "description": "Master's course on the dynamics and control of legged systems, from biomechanics and nonlinear dynamics to optimal control and hands-on programming."
+    },
+    {
+      "course": "Engineering Mechanics II (Technische Mechanik II)",
+      "institution": "University of Stuttgart",
+      "date": "2020-04-01",
+      "role": "Master's course",
+      "description": "Master's course on elastostatics and beam theory, taught as Technische Mechanik II, with additional written-examination support for related mechanics courses."
+    },
+    {
+      "course": "Finite Element Methods (Methode der Finiten Elemente in Statik und Dynamik)",
+      "institution": "University of Stuttgart",
+      "date": "2022-04-01",
+      "role": "Master's course",
+      "description": "Master's course on the finite element method for statics and dynamics, covering variational foundations, element formulation, assembly, and numerical solution."
+    },
+    {
+      "course": "Introduction to Engineering Cybernetics (Einf\u00fchrung in die Technische Kybernetik)",
+      "institution": "University of Stuttgart",
+      "date": "2026-04-01",
+      "role": "Bachelor's course",
+      "description": "Bachelor's course introducing modeling, simulation, systems theory, and control through simple examples as a foundation for later advanced courses."
+    },
+    {
+      "course": "Mechanics 1 (Mechanik 1)",
+      "institution": "University of Stuttgart",
+      "date": "2022-10-01",
+      "role": "Bachelor's course",
+      "description": "Bachelor's introduction to rigid-body kinematics and statics, covering equilibrium, trusses, beams, centers of mass, and basic deformation."
+    },
+    {
+      "course": "Student Projects",
+      "institution": "University of Stuttgart",
+      "date": "",
+      "role": "Project supervision",
+      "description": "Selection of supervised Bachelor's, Master's, and study projects, with public University of Stuttgart OPUS records where available."
     }
   ],
   "portfolio": [

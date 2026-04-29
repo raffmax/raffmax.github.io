@@ -11,8 +11,11 @@ main:
   - title: "CV"
     url: /cv/
 
-  - title: "Research"
-    url: /research/  
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Co-Design via Natural Dynamics"
+    url: /co-design-via-natural-dynamics/
 
   - title: "Teaching"
     url: /teaching/    

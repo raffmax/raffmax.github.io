@@ -4,7 +4,7 @@ collection: research
 permalink: /research/2023-passive-dynamic-walking-gaits/
 date: 2023-10-01
 venue: "2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
-category: conferences
+category: manuscripts
 paperurl: "https://ieeexplore.ieee.org/abstract/document/10342322/"
 image: "/images/research/2023-passive-dynamic-walking-gaits.png"
 authors: "Nelson Rosa, Bassel Katamish, Maximilian Raff, C. David Remy"

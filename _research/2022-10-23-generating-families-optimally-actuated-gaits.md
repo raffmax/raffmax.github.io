@@ -4,7 +4,7 @@ collection: research
 permalink: /research/2022-generating-families-optimally-actuated-gaits/
 date: 2022-10-23
 venue: "2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
-category: conferences
+category: manuscripts
 paperurl: "https://ieeexplore.ieee.org/abstract/document/9981693/"
 image: "/images/research/2022-generating-families-optimally-actuated-gaits.png"
 authors: "Maximilian Raff, Nelson Rosa, C. David Remy"

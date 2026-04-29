@@ -84,9 +84,7 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   manuscripts:
-    title: 'Research Articles and Preprints'
-  conferences:
-    title: 'Conference Papers and Workshops'
+    title: 'Research Articles, Conference Papers and Preprints'
   misc:
     title: "Master's Thesis"
   theses:

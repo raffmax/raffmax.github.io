@@ -86,6 +86,10 @@
 
 .archive__item-publication {
   display: block;
+
+  .archive__item-title {
+    margin-top: 0;
+  }
 }
 
 .archive__item-publication-image {
@@ -98,6 +102,42 @@
     border-radius: $border-radius;
     background: #fff;
   }
+}
+
+.teaching-page-banner {
+  position: relative;
+  margin: 0 0 1.5rem;
+  width: 100%;
+  max-width: 32rem;
+  aspect-ratio: 16 / 6;
+  overflow: hidden;
+  border: 1px solid var(--global-border-color);
+  border-radius: $border-radius;
+  background: #fff;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.teaching-page-banner__caption {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  max-width: calc(100% - 1rem);
+  margin: 0;
+  padding: 0.2rem 0.45rem;
+  color: #fff;
+  font-family: $caption-font-family;
+  font-size: $type-size-7;
+  line-height: 1.2;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: $border-radius;
 }
 
 .archive__item-authors,

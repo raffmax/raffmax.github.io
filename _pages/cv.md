@@ -48,7 +48,7 @@ redirect_from:
     <div class="cv-entry-role">Postdoctoral Researcher</div>
     <div class="cv-entry-place">University of Stuttgart / Max Planck Institute for Intelligent Systems</div>
     <ul>
-      <li>Leading multiple projects on the co-design of robotic systems, with a focus on hardware development</li>
+      <li>Multiple projects on the co-design of robotic systems, with a focus on hardware development</li>
       <li>Building and employing a one-legged hopping robot to explore energy efficiency</li>
       <li>Designing and deploying a robust passive dynamic walker with knees</li>
       <li>Developing modular systems:
@@ -78,7 +78,7 @@ redirect_from:
           <li>Contributed to collaborations, publications, and conference presentations.</li>
           <li>Authored and secured two DFG grant proposals.</li>
           <li>Supervised and mentored more than 20 Bachelor's and Master's students.</li>
-          <li>Developed and delivered lecture content, including examination support.</li>
+          <li><a href="/teaching/">Developed and delivered lecture content, including examination support.</a></li>
         </ul>
       </li>
     </ul>
@@ -127,7 +127,7 @@ redirect_from:
     <div class="cv-entry-place">University of Stuttgart (Grade: summa cum laude)</div>
     <ul>
       <li>Jointly with Graduate School IMPRS-IS.</li>
-      <li>Thesis: Continuation and Optimization of Gaits and Other Non-Smooth Orbits.</li>
+      <li>Thesis: <a href="/research/2025-phd-thesis/">Optimization of Gaits with a Soft Contact Model</a>.</li>
     </ul>
   </div>
 </div>
@@ -141,7 +141,7 @@ redirect_from:
       <li><strong>Master's Thesis Project in Michigan, USA (01/2019 - 04/2019):</strong>
         <ul>
           <li><strong><img src="/images/logos/university-of-michigan.svg" alt="University of Michigan logo" style="height: 1em; vertical-align: -0.15em;"> University of Michigan, Ann Arbor</strong></li>
-          <li>Thesis: Exploring Soft Contact Models in the Optimization of Gaits.</li>
+          <li>Thesis: <a href="/research/2019-exploring-soft-contact-models/">Exploring Soft Contact Models in the Optimization of Gaits</a>.</li>
         </ul>
       </li>
       <li><strong>Academic year abroad in North Carolina, USA (08/2017 - 05/2018):</strong>
