@@ -1,13 +1,13 @@
 ---
 title: "Engineering Mechanics II (Technische Mechanik II)"
 collection: teaching
-type: "Master's course"
+type: "Bachelor's course"
 permalink: /teaching/engineering-mechanics-ii/
 venue: "University of Stuttgart"
 date: 2020-04-01
 teaching_terms: "summer 2020"
 location: "Stuttgart, Germany"
-excerpt: "Master's course on elastostatics and beam theory, taught as Technische Mechanik II, with additional written-examination support for related mechanics courses."
+excerpt: "Bachelor's course on elastostatics and beam theory, taught as Technische Mechanik II, with additional written-examination support for related mechanics courses."
 share: false
 comments: false
 ---

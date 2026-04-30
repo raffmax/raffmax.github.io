@@ -26,13 +26,15 @@ redirect_from:
   }
 
   .research-tag-button,
-  .research-tag-pill {
+  .research-tag-button:visited,
+  .research-tag-pill,
+  .research-tag-pill:visited {
     display: inline-flex;
     align-items: center;
-    border: 1px solid #b7c8b8;
+    border: 1px solid #c7d9e5;
     border-radius: 999px;
-    background: #f4f8f4;
-    color: #244b2a;
+    background: #eef6fb;
+    color: #22495a;
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 600;
@@ -42,9 +44,30 @@ redirect_from:
   }
 
   .research-tag-button.is-active,
+  .research-tag-button:focus,
   .research-tag-button:hover,
+  .research-tag-pill:focus,
   .research-tag-pill:hover {
-    background: #dfeee0;
+    background: #dbeaf4;
+    color: #173846;
+  }
+
+  html[data-theme="dark"] .research-tag-button,
+  html[data-theme="dark"] .research-tag-button:visited,
+  html[data-theme="dark"] .research-tag-pill,
+  html[data-theme="dark"] .research-tag-pill:visited {
+    border-color: var(--global-border-color);
+    background: var(--global-bg-color);
+    color: var(--global-text-color);
+  }
+
+  html[data-theme="dark"] .research-tag-button.is-active,
+  html[data-theme="dark"] .research-tag-button:focus,
+  html[data-theme="dark"] .research-tag-button:hover,
+  html[data-theme="dark"] .research-tag-pill:focus,
+  html[data-theme="dark"] .research-tag-pill:hover {
+    background: var(--global-border-color);
+    color: var(--global-code-text-color);
   }
 
   .archive__item-tags {
@@ -59,7 +82,7 @@ redirect_from:
 
   .research-intro {
     margin: 1.25rem 0 1rem;
-    color: #465247;
+    color: var(--global-text-color);
   }
 
   .research-intro p {

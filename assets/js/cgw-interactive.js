@@ -1341,15 +1341,17 @@
         bifurcationSvg.appendChild(xTickMark);
       }
 
+      var standstillActive = state.currentOrbit && state.currentOrbit.isStandstill;
       var standstillLabelY = margin.top + 16;
       var standstillLine = makeSvgEl("line");
       standstillLine.setAttribute("x1", xScale(0));
       standstillLine.setAttribute("x2", xScale(0));
       standstillLine.setAttribute("y1", standstillLabelY + 10);
       standstillLine.setAttribute("y2", margin.top + innerHeight);
-      standstillLine.setAttribute("stroke", "#6f7b70");
-      standstillLine.setAttribute("stroke-width", "2.5");
-      standstillLine.setAttribute("stroke-dasharray", "7 6");
+      standstillLine.setAttribute("stroke", standstillActive ? "#255a7c" : "#6f7b70");
+      standstillLine.setAttribute("stroke-width", standstillActive ? "5.5" : "2.5");
+      standstillLine.setAttribute("stroke-dasharray", standstillActive ? "10 7" : "7 6");
+      standstillLine.setAttribute("opacity", standstillActive ? "1" : "0.9");
       standstillLine.style.cursor = "pointer";
       standstillLine.addEventListener("click", function () {
         state.gammaDeg = 0;
@@ -1361,9 +1363,9 @@
       standstillLabel.setAttribute("x", xScale(0));
       standstillLabel.setAttribute("y", standstillLabelY);
       standstillLabel.setAttribute("text-anchor", "middle");
-      standstillLabel.setAttribute("fill", "#5f6b60");
-      standstillLabel.setAttribute("font-size", "28");
-      standstillLabel.setAttribute("font-weight", "700");
+      standstillLabel.setAttribute("fill", standstillActive ? "#255a7c" : "#5f6b60");
+      standstillLabel.setAttribute("font-size", standstillActive ? "31" : "28");
+      standstillLabel.setAttribute("font-weight", standstillActive ? "800" : "700");
       standstillLabel.textContent = "stand-still";
       standstillLabel.style.cursor = "pointer";
       standstillLabel.addEventListener("click", function () {

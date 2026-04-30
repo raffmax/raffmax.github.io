@@ -27,4 +27,4 @@ This course offers an accessible introduction to engineering cybernetics by fami
 
 ## Teaching Contribution
 
-I helped develop class content and a hardware exercise for this introductory bachelor's course.
+I helped develop class content and created the hardware exercises for this introductory bachelor's course.
