@@ -62,8 +62,12 @@ $x-large                    : 1280px !default;
 $right-sidebar-width-narrow : auto;
 $right-sidebar-width        : auto;
 $right-sidebar-width-wide   : auto;
-$left-sidebar-width         : 16.9491525424%;
-$content-column-width : 100% - $left-sidebar-width;
+$left-sidebar-padding       : 1rem;
+$author-avatar-width        : 10.9375rem; // 175px at the 16px base font size
+$author-avatar-frame-padding: 0.3125rem;  // 5px at the 16px base font size
+$author-avatar-border-width : 0.0625rem;  // 1px at the 16px base font size
+$left-sidebar-width         : $author-avatar-width + (2 * $author-avatar-frame-padding) + (2 * $author-avatar-border-width) + (2 * $left-sidebar-padding);
+$content-column-width       : calc(100% - #{$left-sidebar-width});
 $content-left-padding       : 1rem;
 
 $susy: (

@@ -379,7 +379,7 @@ body:hover .visually-hidden button {
    ========================================================================== */
 
 .sticky {
-  @include breakpoint($large) {
+  @include breakpoint($sidebar-screen-min-width) {
     @include clearfix();
     position: -webkit-sticky;
     position: sticky;

@@ -10,12 +10,7 @@
     @include span(12 of 12);
   }
 
-  @include breakpoint($large) {
-    @include span(10.5 of 12 last);
-    @include prefix(0.5 of 12);
-  }
-
-  @include breakpoint($x-large) {
+  @include breakpoint($sidebar-screen-min-width) {
     width: 100%;
     margin-left: 0;
     margin-right: 0;

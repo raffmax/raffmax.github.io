@@ -9,7 +9,7 @@
   top: 0;
   width: 100%;
 
-  @include breakpoint($x-large) {
+  @include breakpoint($sidebar-screen-min-width) {
     left: $left-sidebar-width;
     width: $content-column-width;
   }
@@ -35,7 +35,7 @@
     padding: 0.5em 1em;
     font-family: $sans-serif-narrow;
 
-    @include breakpoint($x-large) {
+    @include breakpoint($sidebar-screen-min-width) {
       max-width: none;
       padding-left: $content-left-padding;
     }

@@ -24,7 +24,7 @@ body {
   }
 
   &::before {
-    @include breakpoint($x-large) {
+    @include breakpoint($sidebar-screen-min-width) {
       content: "";
       position: fixed;
       top: 0;

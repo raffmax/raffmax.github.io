@@ -18,7 +18,7 @@ Professional Journey and PhD Research
 I am currently a postdoctoral researcher at the University of Stuttgart, working on the **co-design of hardware and behavior for legged robotic systems** in the newly founded robotics group at the <a href="https://www.iams.uni-stuttgart.de/" target="_blank" rel="noopener">Institute for Adaptive Mechanical Systems (IAMS)</a>. The group is located within Cyber Valley at the Max Planck Institute for Intelligent Systems.
 
 Previously, during my PhD, I worked on new mathematical concepts for energy-efficient locomotion. Below is a short video introducing my PhD research.
-<video id="thesis-video" width="640" height="360" controls playsinline preload="metadata" style="border: 1px solid #b3b3b3;">
+<video id="thesis-video" class="site-video" width="640" height="360" controls playsinline preload="metadata" poster="/images/thesis-video-poster.jpg">
   <source src="/files/Raff_Maximilian_ThesisVideo_web.mp4" type="video/mp4">
   <track id="thesis-video-captions" kind="subtitles" srclang="en" label="English" src="/files/Raff_Maximilian_ThesisVideo.vtt" default>
   Your browser does not support the video tag.
