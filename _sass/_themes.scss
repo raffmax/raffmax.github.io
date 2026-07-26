@@ -42,6 +42,7 @@ $type-size-8                : 0.625em;  // ~10px
 $global-font-family         : $sans-serif;
 $header-font-family         : $sans-serif;
 $caption-font-family        : $serif;
+$readable-text-width        : 50rem;
 
 /* ==========================================================================
    Breakpoints
@@ -69,6 +70,10 @@ $author-avatar-border-width : 0.0625rem;  // 1px at the 16px base font size
 $left-sidebar-width         : $author-avatar-width + (2 * $author-avatar-frame-padding) + (2 * $author-avatar-border-width) + (2 * $left-sidebar-padding);
 $content-column-width       : calc(100% - #{$left-sidebar-width});
 $content-left-padding       : 1rem;
+$centered-content-width     : $content-left-padding + $readable-text-width;
+$centered-site-width        : $left-sidebar-width + $centered-content-width;
+$centered-site-offset       : calc((100vw - #{$centered-site-width}) / 2);
+$centered-main-left         : calc((100vw - #{$centered-site-width}) / 2 + #{$left-sidebar-width});
 
 $susy: (
     columns: 12,

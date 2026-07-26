@@ -12,7 +12,18 @@ share: false
 comments: false
 ---
 
-This course is currently taught at the University of Stuttgart with C. David Remy as the main lecturer. I contributed to the development of class content and a hardware exercise for the course.
+<div class="course-intro-media">
+  <div>
+    <p>This course is currently taught at the University of Stuttgart with C. David Remy as the main lecturer. I contributed to the development of class content and a hardware exercise for the course.</p>
+  </div>
+  <figure class="course-intro-video">
+    <video class="site-video" width="568" height="320" controls playsinline preload="metadata" poster="/images/teaching/introductory-engineering-cybernetics-poster.jpg">
+      <source src="/files/introductory-engineering-cybernetics.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <figcaption>Final Keystone Project (Exercise 11 and 12 of class)</figcaption>
+  </figure>
+</div>
 
 ## Course Description
 

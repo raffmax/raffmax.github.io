@@ -18,6 +18,11 @@
     margin-right: 0;
     padding-left: $content-left-padding;
   }
+
+  @media (min-width: $centered-site-width) {
+    width: $centered-content-width;
+    margin-left: $centered-main-left;
+  }
 }
 
 .page {
@@ -133,6 +138,38 @@
   margin: 1rem 0 1.5rem;
   border: 1px solid var(--global-border-color);
   background: #000;
+}
+
+.course-intro-media {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+  margin: 0 0 1.5rem;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  .site-video {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.course-intro-video {
+  margin: 0;
+
+  figcaption {
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 52rem) {
+  .course-intro-media {
+    grid-template-columns: minmax(0, 1fr) minmax(17rem, 24rem);
+    gap: 1.25rem;
+  }
 }
 
 .page__publication-image {

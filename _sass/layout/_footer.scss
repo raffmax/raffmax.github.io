@@ -18,6 +18,11 @@
     width: $content-column-width;
   }
 
+  @media (min-width: $centered-site-width) {
+    left: $centered-main-left;
+    width: $centered-content-width;
+  }
+
   /* sticky footer fix start */
   position: absolute;
   bottom: 0em;

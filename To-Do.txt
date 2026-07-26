@@ -1,0 +1,4 @@
+- left profile column should have constant size. Independent of window width. Exception, when window width below a threshold then use small profile description with image below navigation bar.
+- there should be an image place holder for videos. Otherwise in some browers/systems the video is not properly shown before it is played.
+- The icons in profile column should be all centered in their vertical alignement. The left alignement of Stuttgart, University of Stuttgart, Email, Google Scholar, GitHub, LinkedIn should remain the same
+- The location icon in profile column should also have a link: https://www.iams.uni-stuttgart.de/institute/contact/

@@ -34,8 +34,37 @@ body {
       background: var(--global-border-color);
       z-index: 25;
     }
+
+    @media (min-width: $centered-site-width) {
+      left: $centered-main-left;
+    }
   }
 
+}
+
+#main p,
+#main ul,
+#main ol,
+#main dl,
+#main blockquote,
+#main pre,
+#main figcaption,
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {
+  max-width: $readable-text-width;
+}
+
+#main > .page,
+#main > .archive,
+#main > .splash,
+#main > .container,
+#main > .page__related {
+  width: 100%;
+  max-width: $readable-text-width;
 }
 
 h1, h2, h3, h4, h5, h6 {

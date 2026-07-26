@@ -127,7 +127,7 @@ redirect_from:
     <div class="cv-entry-place">University of Stuttgart (Grade: summa cum laude)</div>
     <ul>
       <li>Jointly with Graduate School IMPRS-IS.</li>
-      <li>Thesis: <a href="/research/2025-phd-thesis/">Optimization of Gaits with a Soft Contact Model</a>.</li>
+      <li>Thesis: <a href="/research/2025-phd-thesis/">Continuation and Optimization of Gaits and Other Non-Smooth Orbits</a>.</li>
     </ul>
   </div>
 </div>

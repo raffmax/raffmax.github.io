@@ -12,6 +12,20 @@ author_profile: true
   <figcaption class="teaching-page-banner__caption">&copy; University of Stuttgart</figcaption>
 </figure>
 
+<section class="teaching-feature" aria-labelledby="teaching-feature-title">
+  <div class="teaching-feature__body">
+    <p class="teaching-feature__label">Featured class contribution</p>
+    <h2 id="teaching-feature-title" class="teaching-feature__title">
+      <a href="{{ '/teaching/introductory-engineering-cybernetics/' | prepend: base_path }}">Introduction to Engineering Cybernetics</a>
+    </h2>
+    <p>I contributed to this bachelor's course by developing class content and creating the hands-on hardware exercise used to connect modeling, simulation, systems theory, and control.</p>
+  </div>
+  <video class="site-video teaching-feature__video" width="568" height="320" controls playsinline preload="metadata" poster="{{ '/images/teaching/introductory-engineering-cybernetics-poster.jpg' | prepend: base_path }}">
+    <source src="{{ '/files/introductory-engineering-cybernetics.mp4' | prepend: base_path }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
 {% assign teaching_items = site.teaching | sort: "date" | reverse %}
 
 <h2 class="archive__subtitle">Class Work</h2>
